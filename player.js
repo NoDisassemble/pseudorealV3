@@ -1,5 +1,4 @@
 let now_playing = document.querySelector('.now-playing');
-let video_art = document.querySelector('.video-art');
 let video_name = document.querySelector('.video-name');
 
 let playpause_btn = document.querySelector('.playpause-video');
@@ -54,13 +53,12 @@ loadVideo(video_index);
 
 function loadVideo(video_index) {
     clearInterval(updateTimer);
-    reset();
+    // reset();
 
     curr_video.src = video_list[video_index].video;
     curr_video.load();
 
     document.body.style.backgroundImage = "url(" + video_list[video_index].bg + ")";
-    video_art.style.backgroundImage = "url(" + video_list[video_index].img + ")";
     video_name.textContent = video_list[video_index].name;
     //now_playing.textContent = "Playing video " + (video_index + 1) + " of " + video_list.length;
 
@@ -68,11 +66,11 @@ function loadVideo(video_index) {
 
     curr_video.addEventListener('ended', nextVideo);
 }
-function reset() {
-    curr_time.textContent = "00:00";
-    total_duration.textContent = "00:00";
-    seek_slider.value = 0;
-}
+// function reset() {
+//     curr_time.textContent = "00:00";
+//     total_duration.textContent = "00:00";
+//     seek_slider.value = 0;
+// }
 function randomVideo() {
     isRandom ? pauseRandom() : playRandom();
 }
