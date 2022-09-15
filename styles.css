@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* Video Player */
+body {
+  font-family: "Trade Winds", cursive;
+}
+/* ================ Nav ================ */
+.navbar-brand {
+  font-size: 3rem;
+}
+.navbar-nav {
+  font-size: 1.5rem;
+}
+
+/* ============= Video Player ===========*/
 .container {
   display: flex;
   justify-content: center;
