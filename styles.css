@@ -146,3 +146,15 @@ i.fa-step-backward {
   bottom: 15px;
   right: 50px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .download {
+    display: none;
+  }
+  .slider-container {
+    width: 100%;
+  }
+  .buttons {
+    width: 100%;
+  }
+}
