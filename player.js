@@ -95,12 +95,12 @@ function playpauseVideo() {
 function playVideo() {
     player.play();
     isPlaying = true;
-    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-3x"></i>';
+    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-2x"></i>';
 }
 function pauseVideo() {
     player.pause();
     isPlaying = false;
-    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-3x"></i>';
+    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-2x"></i>';
 }
 function nextVideo() {
     if (video_index < video_list.length - 1 && isRandom === false) {
