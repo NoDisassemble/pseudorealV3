@@ -152,7 +152,7 @@ i.fa-step-backward {
     display: none;
   }
   .slider-container {
-    width: 100%;
+    display: none;
   }
   .buttons {
     width: 100%;
